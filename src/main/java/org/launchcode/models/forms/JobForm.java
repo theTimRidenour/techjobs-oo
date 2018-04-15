@@ -22,11 +22,14 @@ public class JobForm {
     @NotNull
     private int employerId;
 
-    /*
-        TODO #3 - Included other fields needed to create a job,
-        with correct validation attributes and display names.
-        Don't forget to add getters and setters
-     */
+    @NotNull
+    private int locationId;
+
+    @NotNull
+    private int posTypeId;
+
+    @NotNull
+    private int coreCompId;
 
     private ArrayList<Employer> employers;
     private ArrayList<Location> locations;
@@ -60,6 +63,18 @@ public class JobForm {
     public void setEmployerId(int employerId) {
         this.employerId = employerId;
     }
+
+    public int getLocationId() { return locationId; }
+
+    public void setLocationId(int locationId) { this.locationId = locationId; }
+
+    public int getPosTypeId() { return posTypeId; }
+
+    public void setPosTypeId(int posTypeId) { this.posTypeId = posTypeId; }
+
+    public int getCoreCompId() { return coreCompId; }
+
+    public void setCoreCompId(int coreCompId) { this.coreCompId = coreCompId; }
 
     public ArrayList<Employer> getEmployers() {
         return employers;
